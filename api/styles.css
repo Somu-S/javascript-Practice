@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.form-container{
+    padding: 20px;
+}
+#parent{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    place-items: center;
+    gap: 10px;
+    margin: 0px auto;
+}
+.hero{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px 0px;
+    height: 400px;
+}
+.id,.body{
+    font-size: 16px;
+}
+.image{
+    height: 200px;
+    width: 200px;
+}
+.test-form{
+    background-color: whitesmoke;
+}
+.test-bar{
+    display: flex;
+}
+.test-bar button{
+    font-size: 18px;
+    padding: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.add-content{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.a-cont-form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.a-cont-form label{
+    font-size: 20px;
+    font-weight: semibold;
+}
+.a-cont-form input,textarea{
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+}
+.a-cont-form input::placeholder{
+    font-size: 16px;
+}
+.title{
+    margin-top: 20px;
+}
+.submit button{
+    padding:10px 20px;
+    outline: none;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.submit button:hover{
+    background-color: red;
+    transition: 300ms;
+}
+.add-test{
+    background-color: blue;
+    color: white;
+}
+.view-test{
+    color: black;
+}
+.image-up input{
+    font-size: 16px;
+    cursor: pointer;
+    width: fit-content;
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td,tr {
+    color: black;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  th{
+    font-size: 18px;
+    color: white;
+  }
+.view-cont{
+    display: none;
+}
+.dlt{
+    background-color: red;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+}
+.img{
+    height: 50px;
+    width: 50px;
+}
+.truncate-overflow{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+
+
+
+

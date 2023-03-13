@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Create Account</title>
+</head>
+<body>
+    <div class="create-form">
+        <h2>Create New Account</h2>
+        <div class="form-wrapper">
+            <div class="form-input">
+                <label for="name">Name</label>
+                <div class="name-flex">
+                <div class="input-flex">
+                <input type="text" placeholder="First Name" name="f-name" onchange="Input(this.value,this.name)">
+                <p class="f-error" style="color: blue;"></p>
+                </div>
+                <div class="input-flex">
+                <input type="text" placeholder="Last Name" name="l-name" onchange="Input(this.value,this.name)">
+                <p class="l-error" style="color: blue;"></p>
+                </div>
+                </div>
+            </div>
+            <div class="form-input">
+                <label for="Email">Email</label>
+                <input type="email" placeholder="Enter your email address" name="Email" onchange="Input(this.value,this.name)">
+                <div class="e-error" style="color: blue;"></div>
+            </div>
+            <div class="form-input">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" placeholder="Enter your phone number" onchange="Input(this.value,this.name)">
+                <p class="ph-error" style="color: blue;"></p>
+            </div>
+            <div class="form-input">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter your password" onchange="Input(this.value,this.name)">
+                <p class="pass-error" style="color: blue;"></p>
+            </div>
+            <div class="form-input">
+                <button class="create-btn" onclick="validate()">
+                    Create Account
+                </button>
+            </div>
+        </div>
+        <script src="create.js"></script>
+</body>
+</html>

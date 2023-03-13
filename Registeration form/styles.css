@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    margin: 5px 0;
+}
+.form-wrapper{
+    border: 2px black;
+    border-style: dashed;
+    border-radius: 10px;
+    max-width: 600px;
+    padding: 40px;
+    margin: 200px auto;
+}
+.form-field-wrapper{
+    margin: 40px 0;
+}
+.inpt-ctrl,.msg{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    gap: 10px;
+}
+label{
+    font-size: 18px;
+}
+.inpt-ctrl input,textarea{
+    padding: 10px 2px;
+    outline: none;
+}
+.sbmt button{
+    color: white;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(28, 26, 26);
+    cursor: pointer;
+    border-radius: 4px;
+}
+.sbmt button:hover{
+    background-color: white;
+    color: black;
+    transition: 500ms;
+}

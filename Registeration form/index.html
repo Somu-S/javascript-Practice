@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-wrapper">
+        <h1>Inquiry Form</h1>
+        <p>We will get in touch with you shortly</p>
+        <div class="form-field-wrapper">
+            <div class="inpt-ctrl">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Enter your name" onchange="Input(this.value,this.name)">
+                <p class="n-error" style="color:Red"></p>
+            </div>
+            <div class="inpt-ctrl">
+                <label for="Email">Email</label>
+                <input type="text" name="Email" placeholder="Enter your email"
+                onchange="Input(this.value,this.name)">
+                <p class="e-error" style="color:Red"></p>
+            </div>
+            <div class="inpt-ctrl">
+                <label for="phn">Phone Number</label>
+                <input type="number" name="phn" placeholder="Enter your phone number" onchange="Input(this.value,this.name)">
+                <p class="p-error" style="color:Red"></p>
+            </div>
+            <div class="inpt-ctrl">
+                <label for="adrs">Address</label>
+                <input type="text" name="adrs" placeholder="Enter your address" onchange="Input(this.value,this.name)">
+                <p class="a-error" style="color:Red"></p>
+            </div>
+            <div class="msg">
+                <label for="Message">Message</label>
+                <textarea name="Message" cols="30" rows="10" placeholder="Enter your message" onchange="Input(this.value,this.name)"></textarea>
+                <p class="MsG" style="color:Green"></p>
+            </div>
+            <div class="sbmt">
+                <button onclick="Submit()">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

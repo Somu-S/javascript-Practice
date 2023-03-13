@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="form">
+        <div class="form-container">
+            <h2>Form validation</h2>
+            <div class="input-ctrl">
+                <label for="fname">First Name</label>
+                <input id='fname' type="text" placeholder="Enter your first name" onchange="Value(this.value,this.name)" name="fname">
+                <p class="f-error"></p>
+            </div>
+            <div class="input-ctrl">
+                <label for="lname">Last Name</label>
+                <input type="text" placeholder="Enter your last name" onchange="Value(this.value,this.name)" name="lname">
+                <p class="l-error"></p>
+            </div>
+            <div class="input-ctrl">
+                <label for="Email">Email</label>
+                <input type="email" placeholder="Enter your email address"
+                onchange="Value(this.value,this.name)" name="email">
+                <p class="E-error"></p>
+            </div>
+            <div class="input-ctrl">
+                <label for="Email">Password</label>
+                <input type="Password" placeholder="Enter your password"
+                onchange="Value(this.value,this.name)" name="password">
+                <p class="p-error"></p>
+            </div>
+            <div class="input-ctrl">
+                <label for="msg">Message</label>
+                <textarea name="msg" placeholder="Enter your Message" onchange="Value(this.value,this.name)"></textarea>
+            </div>
+
+            <div class="create">
+                Don't have account? <a href="newac.html">Create Account ?</a>
+            </div>
+            <div class="sbmit-btn">
+                <button onclick="Submit()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="popup">
+            <img src="./checked.png">
+            <h2>Thank You!</h2>
+            <p>Your details has been successfully submitted.Thanks!
+            </p>
+            <button class="ok-btn" onclick="closePop()">Ok</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

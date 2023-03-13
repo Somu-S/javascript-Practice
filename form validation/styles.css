@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input,textarea{
+    outline: none;
+}
+.input-ctrl{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+body{
+    background: skyblue;
+}
+.form{
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: crimson;
+    border-radius: 5px;
+}
+.input-ctrl input{
+    padding: 10px;
+}
+textarea{
+    height: 200px;
+    padding: 10px;
+}
+textarea input{
+    outline: none;
+    border: none;
+}
+button{
+    padding: 10px;
+    border: none;
+}
+.sbmit-btn button:hover{
+    background-color: blue;
+    color: white;
+    transition: all 400ms;
+}
+.f-error,.l-error,.E-error{
+    color: red;
+}
+.submitted{
+    color: green;
+    font-size: x-large;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+.popup img{
+    height: 50px;
+}
+.popup h2{
+    margin: 10px 0px;
+}
+.popup button{
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: green;
+    border: none;
+    color: white;
+}
+.modal{
+    position: fixed;
+    display: none;
+    background-color: rgb(0, 0, 0, .7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: auto;
+}
+.popup{
+    position: absolute;
+    background-color: wheat;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 38%;
+    animation-name: modalopen;
+    animation-duration: 1s;
+    transform: translateY(100%);
+    transition: all 400ms ease-in-out;
+    box-shadow: rgba(79, 78, 78, 0.375) 10px 5px;
+}
+
+@keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .create{
+    margin-bottom: 10px;
+  }
+  .create a{
+    text-decoration: none;
+  }
+
+
+
+  .create-form{
+    background-color: crimson;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 100px auto;
+  }
+  .form-wrapper{
+    max-width: 400px;
+  }
+  .name-flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .form-input{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  .form-input input{
+    padding: 5px 0;
+  }
+  .create-btn{
+    background-color: blue;
+    border: none;
+    outline: none;
+    color: wheat;
+  }
+  .create-btn:hover{
+    background-color: darkviolet;
+    transition: 400ms;
+  }
+
+  .login-btn{
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
